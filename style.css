@@ -1,0 +1,102 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.container-fluid {
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column; /* Column direction to place elements vertically */
+}
+
+.card {
+    flex: 1; /* Allow card to take available space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow: hidden; /* Ensure no scrollbars */
+    background: #fff; /* Background color of the card */
+    box-shadow: 0 4px 8px rgba(219, 214, 214, 0.2); /* Add shadow to the card */
+}
+
+.card-header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    background: white; /* Ensure it has a background color */
+}
+
+#inputText {
+    width: 100%; /* Make input responsive */
+    max-width: 600px; /* Adjust the maximum width */
+    padding: 5px; /* Add padding for better look */
+    font-size: 1rem; /* Set a reasonable font size */
+    border: 1px solid #d3d3d3;
+    border-radius: 5px;
+    text-align: center;
+    border: none; 
+    background-color: #dbdee0;
+}
+
+.text {
+    display: inline-block;
+    white-space: nowrap; /* Prevent wrapping */
+    overflow: hidden; /* Ensure no scrollbars */
+    text-align: center;
+    width: 100%;
+}
+
+.charbox {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.char {
+    font-size: 2em;
+    font-family: 'Times New Roman', Times, serif;
+    display: inline-block;
+    color: white; 
+    padding: 10px; /* Adjust padding for better responsiveness */
+}
+
+.count {
+    display: inline-block;
+    font-size: 0.6em; /* Adjust font size for better readability */
+    margin-left: 5px;
+    vertical-align: top;
+    color: white; /* Set text color to white */
+}
+
+.card-footer {
+    background: white; /* Ensure it has a background color */
+    padding: 10px;
+    text-align: center;
+    font-size: 0.75rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+    .char {
+        font-size: 1.5em; /* Smaller font size on small screens */
+        padding: 5px; /* Adjust padding */
+    }
+    .count {
+        font-size: 0.5em; /* Smaller font size for counts */
+    }
+    #inputText {
+        max-width: 100%; /* Ensure input takes full width on small screens */
+    }
+}
+
+     /* Custom class for 80vh height */
+     .carousel-item img {
+        height: 80vh;
+        object-fit: cover; /* Ensure the image covers the container without distortion */
+    }
